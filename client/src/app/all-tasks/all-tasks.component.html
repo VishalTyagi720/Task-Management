@@ -1,0 +1,56 @@
+
+<!-- <div class="main_task_container">
+    <div class="main_todo_container">
+        @if (userData.length > 0) {
+            @for (form of userData; track $index) {
+                <div class="task_container">
+                    <div class="task_item_container">
+                        <div class="icon"><i class="fa-regular fa-circle"></i></div>
+                        <div class="task_item">
+                            <a routerLink="taskDetail" (click)="fetchDetailTask(form._id)"><p>{{form.title}}</p></a>
+                            <p>Due-date: {{form.dueDate | date:'dd-MM-yyy'}}</p>
+                            @if (taskVisiable) {
+                                <p>{{form.description}}</p>
+                            }
+                        </div>
+                    </div>
+                    <button mat-raised-button (click)="userTaskUpdate(form._id)">Edit</button>
+                    <button mat-flat-button (click)="userTaskDelete(form._id)">Delete</button>
+                </div>
+                <div class="partition"></div>
+            }
+        }@else {
+            <h1>No Data</h1>
+        }
+    </div>
+</div> -->
+
+
+
+
+<div class="main_task_container">
+    <div class="main_todo_container">
+        @if (userData.length > 0) {
+            @for (form of userData; track $index) {
+                <div class="task_container">
+                    <div class="task_item_container">
+                        <div class="icon"><i class="fa-regular fa-circle"></i></div>
+                        <mat-expansion-panel hideToggle>
+                            <mat-expansion-panel-header>
+                              <mat-panel-title><p>{{form.title}}</p></mat-panel-title>
+                              <mat-panel-description><p>Due-date: {{form.dueDate | date:'dd-MM-yyy'}}</p></mat-panel-description>
+                            </mat-expansion-panel-header>
+                            <p><p>{{form.description}}</p>
+                          </mat-expansion-panel>
+                    </div>
+                    <button mat-raised-button (click)="userTaskUpdate(form._id)">Edit</button>
+                    <button mat-flat-button (click)="userTaskDelete(form._id)">Delete</button>
+                </div>
+                <!-- <div class="partition"></div> -->
+            }
+        }@else {
+            <h1>No Data</h1>
+        }
+    </div>
+</div>
+

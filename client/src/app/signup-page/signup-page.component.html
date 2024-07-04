@@ -1,0 +1,33 @@
+
+
+<mat-card>
+    <mat-card-title>SIGNUP</mat-card-title>
+    <mat-card-content>
+        <form [formGroup]="signupForm" (ngSubmit)="handleSubmit()">
+            <p>
+                <mat-form-field appearance="outline">
+                    <mat-label>Enter your Username</mat-label>
+                    <input type="text" matInput placeholder="Username" formControlName="username">
+                </mat-form-field>
+            </p>
+            <p>
+                <mat-form-field appearance="outline">
+                    <mat-label>Enter your Email</mat-label>
+                    <input type="email" matInput placeholder="Email" formControlName="email">
+                </mat-form-field>
+            </p>
+            <p>
+                <mat-form-field appearance="outline">
+                    <mat-label>Enter your password</mat-label>
+                    <input type="password" matInput placeholder="Password" formControlName="password">
+                </mat-form-field>
+            </p>
+            <div class="button">
+                <button type="submit" mat-button [disabled]="signupForm.invalid">Signup</button>
+            </div>
+            
+            <p>Already have an Account? <a routerLink="/login">Login</a></p>
+
+        </form>
+    </mat-card-content>
+</mat-card>

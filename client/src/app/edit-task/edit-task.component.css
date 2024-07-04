@@ -1,0 +1,95 @@
+
+
+:host {
+    display: flex;
+    justify-content: center;
+    margin: 100px 0px;
+  }
+  mat-card-title {
+    margin: 7% 0;
+    font-size: 40px;
+  }
+
+  .mat-form-field {
+    width: 100%;
+    min-width: 300px;
+  }
+
+  mat-card-title,
+  mat-card-content {
+    display: flex;
+    justify-content: center;
+  }
+
+  .error {
+    padding: 16px;
+    width: 300px;
+    color: white;
+    background-color: red;
+  }
+
+  .button {
+    display: flex;
+    justify-content: center;
+}
+.button button {
+    color: black;
+    width: 30%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 5% 0;
+    margin-bottom: 7%;
+  }
+  button:hover {
+    background-color: #005cbb;
+  }
+  mat-card {
+    background-color: #f7f7f7;
+    /* height: 50%; */
+    width: 40%;
+  }
+  mat-form-field {
+    width: 450px;
+    /* border: 1px solid black; */
+  }
+  p a {
+    color: black;
+    text-decoration: none;
+    font-weight:700;
+    font-size: large;
+  }
+  p a:hover {
+    text-decoration: underline;
+    color: #ff7f3e;
+  }
+
+
+
+
+
+.dialog_box {
+    width: 500px;
+    /* height: 400px; */
+    background-color: #f7f7f7;
+}
+
+h1 {
+    text-align: center;
+}
+mat-form-field {
+    display: block;
+    margin: 0 auto;
+    /* height: 110px; */
+}
+
+.save_button {
+    padding: 2%;
+    margin: 3%;
+}
+
+.save_button:hover {
+    color: black;
+}
+
+.cancel:hover {
+  color: white;
+}

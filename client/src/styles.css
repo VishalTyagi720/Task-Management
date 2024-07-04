@@ -1,0 +1,13 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body {
+    height: 100%;
+    background-image: url('https://img.freepik.com/premium-vector/isometric-project-manager-updating-tasks-milestones-progress-planning-weekly-schedule-calendar-planner-organization-management_589019-2115.jpg?ga=GA1.1.1081724155.1711517235&semt=ais_user');
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}

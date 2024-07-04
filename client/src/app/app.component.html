@@ -1,0 +1,35 @@
+
+<!-- <nav class="menu_container">
+    <div class="logo">
+        <input type="checkbox" />
+        <span class="layer1"></span>
+        <span class="layer2"></span>
+        <span class="layer3"></span>
+
+        <a href="" class="menu_logo">
+            <img src="https://img.freepik.com/free-vector/people-calendar-time-management-concept_23-2148822826.jpg?ga=GA1.1.1081724155.1711517235&semt=ais_user" alt="my_website">
+        </a>
+    </div>
+
+    <div class="menu">
+        <ul>
+            <li routerLink="newTask"><a>New Task</a></li>
+            <li routerLink="all-tasks"><a>All Tasks</a></li>
+             @if (!currentUser && !id) {
+                <button mat-flat-button routerLink="login"><li><a>Login</a></li></button>
+                <button mat-flat-button routerLink="signup"><li><a>Register</a></li></button>
+             }@else{ 
+                <div class="user_details" routerLink="profile">
+                     <div> <i class="fa-regular fa-user"></i></div>
+                    <div class="username">{{currentUser}}</div>
+                </div>
+             }
+        </ul>
+    </div>
+</nav> -->
+
+<app-navbar></app-navbar>
+
+<router-outlet />
+<ng-toast [width]="500" [position]="ToasterPosition.TOP_RIGHT" class="toast"></ng-toast>
+

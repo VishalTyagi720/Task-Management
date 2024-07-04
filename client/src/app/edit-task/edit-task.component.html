@@ -1,0 +1,23 @@
+<div class="dialog_box">
+    <h1 mat-dialog-title>ADD TASK</h1>
+    <div mat-dialog-content>
+      <form [formGroup]="editTaskForm">
+        <mat-form-field>
+          <mat-label>Title</mat-label>
+          <input matInput name="title" required formControlName="title">
+        </mat-form-field>
+        <mat-form-field>
+          <mat-label>Description</mat-label>
+          <textarea matInput name="description" required formControlName="description"></textarea>
+        </mat-form-field>
+        <mat-form-field>
+          <mat-label>Choose a date</mat-label>
+          <input matInput formControlName="dueDate" type="date">
+        </mat-form-field>
+      </form>
+    </div>
+    <div mat-dialog-actions>
+      <button mat-button (click)="onCancel()" class="cancel">Cancel</button>
+      <button type="submit" [mat-dialog-close]="editTaskForm.value" mat-button [disabled]="!editTaskForm.valid" class="save_button">Save</button>
+    </div>
+  </div>
