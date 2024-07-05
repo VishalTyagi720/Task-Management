@@ -87,9 +87,9 @@ mat-panel-title p, mat-panel-description p {
     /* border: 1px solid rgb(0, 6, 128); */
     margin: auto 0;
 }
-mat-panel-description p {
+/* mat-panel-description p {
     font-size: large;
-}
+} */
 
 mat-panel-title {
     padding: 10px 0;

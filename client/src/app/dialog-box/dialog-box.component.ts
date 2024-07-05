@@ -11,6 +11,7 @@ import { JsonPipe } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
 import { NgToastService } from 'ng-angular-popup';
+import { MatCard } from '@angular/material/card';
 
 @Component({
   selector: 'app-dialog-box',
@@ -22,7 +23,7 @@ import { NgToastService } from 'ng-angular-popup';
     MatDialogTitle,
     MatDialogContent,
     MatDialogActions,
-    MatDialogClose, MatDatepickerModule, JsonPipe],
+    MatDialogClose, MatDatepickerModule, JsonPipe,MatCard],
   templateUrl: './dialog-box.component.html',
   styleUrl: './dialog-box.component.css',
 })
